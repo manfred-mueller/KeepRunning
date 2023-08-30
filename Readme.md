@@ -1,3 +1,5 @@
+![KeepRunning screenshot](/Screenshot1.png?raw=true "KeepRunning screenshot")
+
 Eine kleine Anwendung, um regelmäßig zu überprüfen, ob ein Programm ausgeführt wird, und um das Programm zu starten, wenn es nicht ausgeführt wird.
 
 1. Wählen Sie ein Programm mit einem Klick auf den Button aus.
