@@ -1,4 +1,4 @@
-![KeepRunning screenshot](/Screenshot1.png?raw=true "KeepRunning screenshot")
+![KeepRunning screenshot](/screenshot1.png?raw=true "KeepRunning screenshot")
 
 Eine kleine Anwendung, um regelmäßig zu überprüfen, ob ein Programm ausgeführt wird, und um das Programm zu starten, wenn es nicht ausgeführt wird.
 
