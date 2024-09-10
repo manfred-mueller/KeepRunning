@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NASS e.K.")]
 [assembly: AssemblyProduct("KeepRunning")]
-[assembly: AssemblyCopyright("Copyright © NASS e.K. 2023")]
+[assembly: AssemblyCopyright("Copyright © NASS e.K. 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

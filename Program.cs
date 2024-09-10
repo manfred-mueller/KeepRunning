@@ -3,7 +3,7 @@ using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Windows.Forms;
 
-namespace DHLabel
+namespace KeepRunning
 {
     static class Program
     {
@@ -35,7 +35,7 @@ namespace DHLabel
             Form1 form = MainForm as Form1;
             if (e.CommandLine.Count == 2)
             {
-                form.checkFile(e.CommandLine[1]);
+                form.CheckFile(e.CommandLine[1]);
             }
         }
 

@@ -19,19 +19,24 @@ mono_crash.*
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
+#[Rr]elease/
 x64/
 x86/
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
+[Mm]anifests/
+
+# Do NOT ignore the following, even if they are in subdirectories
+bin/Release/*
+!bin/Release/KeepRunning*.exe
+#!*/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/

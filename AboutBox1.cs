@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
@@ -10,7 +11,7 @@ namespace KeepRunning
         public AboutBox1()
         {
             InitializeComponent();
-            int centerX = Screen.PrimaryScreen.WorkingArea.Width / 2 - 230;
+            int centerX = Screen.PrimaryScreen.WorkingArea.Width / 2 - 220;
             int centerY = Screen.PrimaryScreen.WorkingArea.Height / 2 - 75;
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(centerX, centerY);
@@ -18,7 +19,6 @@ namespace KeepRunning
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = Properties.Resources.Description.Replace("<br>", Environment.NewLine);
         }
 
@@ -101,5 +101,11 @@ namespace KeepRunning
             }
         }
         #endregion
+        // Event handler for copyright label clicked
+        private void CopyrightLabelClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.nass-ek.de");
+        }
+
     }
 }

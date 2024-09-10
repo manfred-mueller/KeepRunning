@@ -45,10 +45,10 @@ namespace KeepRunning
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProcessName = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.timerComboBox = new System.Windows.Forms.ComboBox();
             this.statusPanel = new System.Windows.Forms.Label();
-            this.copyRight = new System.Windows.Forms.LinkLabel();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.HelpLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MonitorFileButton)).BeginInit();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -100,7 +100,7 @@ namespace KeepRunning
             this.aboutToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(194, 70);
+            this.contextMenuStrip.Size = new System.Drawing.Size(194, 92);
             // 
             // registerToolStripMenuItem
             // 
@@ -143,21 +143,21 @@ namespace KeepRunning
             this.ProcessName.Enter += new System.EventHandler(this.ProcessName_Enter);
             this.ProcessName.Leave += new System.EventHandler(this.ProcessName_Leave);
             // 
-            // comboBox1
+            // timerComboBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Enabled = false;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.timerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.timerComboBox.Enabled = false;
+            this.timerComboBox.Items.AddRange(new object[] {
             global::KeepRunning.Properties.Resources.Hourly,
             global::KeepRunning.Properties.Resources.TwoTimesADay,
             global::KeepRunning.Properties.Resources.Daily});
-            this.comboBox1.Location = new System.Drawing.Point(357, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(129, 21);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
-            this.comboBox1.DropDownClosed += new System.EventHandler(this.comboBox1_DropDownClosed);
+            this.timerComboBox.Location = new System.Drawing.Point(357, 72);
+            this.timerComboBox.Name = "timerComboBox";
+            this.timerComboBox.Size = new System.Drawing.Size(129, 21);
+            this.timerComboBox.TabIndex = 3;
+            this.timerComboBox.DropDown += new System.EventHandler(this.timerComboBox_DropDown);
+            this.timerComboBox.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            this.timerComboBox.DropDownClosed += new System.EventHandler(this.timerComboBox_DropDown);
             // 
             // statusPanel
             // 
@@ -167,20 +167,6 @@ namespace KeepRunning
             this.statusPanel.Size = new System.Drawing.Size(62, 13);
             this.statusPanel.TabIndex = 6;
             this.statusPanel.Text = "statusPanel";
-            // 
-            // copyRight
-            // 
-            this.copyRight.AutoSize = true;
-            this.copyRight.LinkArea = new System.Windows.Forms.LinkArea(6, 15);
-            this.copyRight.LinkColor = System.Drawing.Color.RoyalBlue;
-            this.copyRight.Location = new System.Drawing.Point(393, 130);
-            this.copyRight.Name = "copyRight";
-            this.copyRight.Size = new System.Drawing.Size(95, 17);
-            this.copyRight.TabIndex = 5;
-            this.copyRight.TabStop = true;
-            this.copyRight.Text = "©2023 NASS e.K.";
-            this.copyRight.UseCompatibleTextRendering = true;
-            this.copyRight.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.CopyrightLabelClicked);
             // 
             // SaveButton
             // 
@@ -192,15 +178,27 @@ namespace KeepRunning
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
+            // HelpLabel
+            // 
+            this.HelpLabel.AutoSize = true;
+            this.HelpLabel.BackColor = System.Drawing.Color.Transparent;
+            this.HelpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HelpLabel.Location = new System.Drawing.Point(465, 120);
+            this.HelpLabel.Name = "HelpLabel";
+            this.HelpLabel.Size = new System.Drawing.Size(34, 25);
+            this.HelpLabel.TabIndex = 6;
+            this.HelpLabel.Text = "❓";
+            this.HelpLabel.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 147);
+            this.Controls.Add(this.HelpLabel);
             this.Controls.Add(this.SaveButton);
-            this.Controls.Add(this.copyRight);
             this.Controls.Add(this.statusPanel);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.timerComboBox);
             this.Controls.Add(this.ProcessName);
             this.Controls.Add(this.FileChosen);
             this.Controls.Add(this.BrowseButton);
@@ -218,6 +216,8 @@ namespace KeepRunning
 
         }
         #endregion
+
+        private Label HelpLabel;
     }
 }
 

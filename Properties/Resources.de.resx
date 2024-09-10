@@ -207,4 +207,13 @@
   <data name="HelpLabel" xml:space="preserve">
     <value>Über</value>
   </data>
+  <data name="ConfirmExit" xml:space="preserve">
+    <value>Anwendung schließen</value>
+  </data>
+  <data name="_0IsStillBeingMonitored" xml:space="preserve">
+    <value>{0} wird noch überwacht.</value>
+  </data>
+  <data name="ReallyCloseTheApplication" xml:space="preserve">
+    <value>Die Anwendung wirklich schließen?</value>
+  </data>
 </root>

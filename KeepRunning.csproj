@@ -270,6 +270,7 @@
     <None Include="icons\rechteck-80x80.gif" />
     <None Include="icons\rechteck-40x40.gif" />
     <None Include="icons\logo-shield.png" />
+    <Content Include="InstallScript.iss" />
     <Content Include="keeprunning.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -295,7 +296,7 @@
     <Error Condition="!Exists('packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>D:\Tools\sign.cmd $(TargetPath)</PostBuildEvent>
+    <PostBuildEvent>D:\Tools\sign.cmd $(TargetPath) &amp;&amp; iscc /Q $(SolutionDir)InstallScript.iss</PostBuildEvent>
   </PropertyGroup>
   <Import Project="packages\Costura.Fody.5.7.0\build\Costura.Fody.targets" Condition="Exists('packages\Costura.Fody.5.7.0\build\Costura.Fody.targets')" />
   <Import Project="packages\Fody.6.8.0\build\Fody.targets" Condition="Exists('packages\Fody.6.8.0\build\Fody.targets')" />

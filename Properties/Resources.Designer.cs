@@ -19,7 +19,7 @@ namespace KeepRunning.Properties {
     // -Klasse über ein Tool wie ResGen oder Visual Studio automatisch generiert.
     // Um einen Member hinzuzufügen oder zu entfernen, bearbeiten Sie die .ResX-Datei und führen dann ResGen
     // mit der /str-Option erneut aus, oder Sie erstellen Ihr VS-Projekt neu.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,15 @@ namespace KeepRunning.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {0} is still being monitored. ähnelt.
+        /// </summary>
+        internal static string _0IsStillBeingMonitored {
+            get {
+                return ResourceManager.GetString("_0IsStillBeingMonitored", resourceCulture);
             }
         }
         
@@ -106,6 +115,15 @@ namespace KeepRunning.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Exit application ähnelt.
+        /// </summary>
+        internal static string ConfirmExit {
+            get {
+                return ResourceManager.GetString("ConfirmExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Register context menu ähnelt.
         /// </summary>
         internal static string ContextMenuRegister {
@@ -126,11 +144,11 @@ namespace KeepRunning.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die A small application to check periodically whether a program is running and to start that program if it is not running.&lt;br&gt;
         ///1. Choose a program with a click on the button.&lt;br&gt;
-        ///2. If it is not in the systems preocesses list, type the processname in the field below.&lt;br&gt;
-        ///3. Adjust the time period to hourrly, twice a day or daily.&lt;br&gt;
+        ///2. If it is not in the systems processes list, type the processname in the field below.&lt;br&gt;
+        ///3. Adjust the time period to hourly, twice a day or daily.&lt;br&gt;
         ///4. Save the settings with a click on the Save button.&lt;br&gt;
         ///6. Start/Stop the monitoring with a click on the timer button in the middle of the screen.&lt;br&gt;
-        ///You can create a desk [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///You can create a deskto [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
         internal static string Description {
             get {
@@ -194,7 +212,7 @@ namespace KeepRunning.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die ?? ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die About ähnelt.
         /// </summary>
         internal static string HelpLabel {
             get {
@@ -338,6 +356,15 @@ namespace KeepRunning.Properties {
         internal static string Ready {
             get {
                 return ResourceManager.GetString("Ready", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Really close the application? ähnelt.
+        /// </summary>
+        internal static string ReallyCloseTheApplication {
+            get {
+                return ResourceManager.GetString("ReallyCloseTheApplication", resourceCulture);
             }
         }
         
